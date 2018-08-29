@@ -80,6 +80,38 @@ form.award-form{
   margin-top: 220px
 }
 
+section.intro-award .align-items-center{
+  height: 700px;
+  color: #fff;
+}
+
+section.intro-award .align-items-center ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section.intro-award .align-items-center h1{
+  font-size: 3.5rem;
+}
+
+section.intro-award .align-items-center ul li i{
+  font-size: 12pt;
+  color: red;
+  margin-right: 20px
+}
+
+section.main-slider .carousel-indicators{
+  bottom: 180px;
+  justify-content: flex-end;
+}
+
+section.main-slider .carousel-indicators li{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
 footer{
   background: url(../../images/bg-footer.jpg)no-repeat 0 0;
   background-size: cover;
