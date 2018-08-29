@@ -74,10 +74,29 @@ form.award-form .custom-file-label{
 
 .btn-category .col-xl-4:last-child{
   padding-left: 5px;
+}form.award-form{
+  margin-top: 220px
 }
 
-form.award-form{
-  margin-top: 220px
+.hh{
+  margin-left: 123px;
+  margin-top: 200px;
+  color: white;
+}
+
+.hhh{
+  margin-left: 123px;
+  color: white;
+}
+
+.award-list .hii{
+  margin-left: 138px;
+  width: 136px;
+  border-radius: 20px;
+  height: 37px;
+  background-color: #ED5E24;
+  border-color: #ED5E24;
+  color: white;
 }
 
 footer{
