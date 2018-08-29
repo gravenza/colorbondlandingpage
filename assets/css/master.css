@@ -1,1 +1,49 @@
 @import url(bootstrap.css);
+
+.clearer{
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+
+header,content,section,footer{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+#header{
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+}
+
+section.intro-award{
+  background: url(../../images/bg-intro_award.png)no-repeat 0 0;
+  background-size: cover;
+  height: 700px;
+  margin-top: -220px;
+  z-index: 2;
+}
+
+section.form-award{
+  background: url(../../images/bg-form-award.png)no-repeat 0 0;
+  background-size: cover;
+  height: 800px;
+  margin-top: -220px;
+  z-index: 1;
+}
+
+section.award-list{
+  background: url(../../images/bg-award-list.jpg)no-repeat 0 0;
+  background-size: cover;
+  height: 700px;
+  margin-top: -220px;
+  z-index: 0;
+}
+
+footer{
+  background: url(../../images/bg-footer.jpg)no-repeat 0 0;
+  background-size: cover;
+}

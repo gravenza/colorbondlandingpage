@@ -27,4 +27,15 @@
 		  </a>
 		</div>
 	</section>
+	<section class="intro-award">
+
+	</section>
+	<section class="form-award">
+
+	</section>
+
+	<section class="award-list">
+
+	</section>
+
 </content>

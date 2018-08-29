@@ -12,3 +12,19 @@
 		<title>Colorbond Award</title>
 	</head>
 	<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="clearer mt-0">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+						<div class="logo">
+							<a href="#">
+								<img src="<?php echo base_url('images/lg_colorbond_award.png') ?>" alt="logo-colorbond-award" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
