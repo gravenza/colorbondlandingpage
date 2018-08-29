@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/master.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JQUERY & JAVASCRIPT -->
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-1.11.3.js"></script>

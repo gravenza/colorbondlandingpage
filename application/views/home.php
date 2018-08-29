@@ -31,16 +31,6 @@
 
 	</section>
 	<section class="form-award">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<?php include "include/form.php" ?>
 	</section>
 

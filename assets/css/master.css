@@ -6,6 +6,10 @@
   margin: 20px 0;
 }
 
+.cellpadding{
+  padding: 60px 0;
+}
+
 header,content,section,footer{
   float: left;
   width: 100%;
@@ -43,7 +47,66 @@ section.award-list{
   z-index: 0;
 }
 
+form.award-form button{
+  border-radius: 25px;
+}
+
+form.award-form .btn-warning{
+  background-color: #ED5E24;
+  border-color: #DB501F;
+}
+
+form.award-form .custom-file-label{
+  left: 15px;
+  right: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.btn-category .col-xl-4:first-child{
+  padding-right: 5px;
+}
+
+.btn-category .col-xl-4:nth-child(2){
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.btn-category .col-xl-4:last-child{
+  padding-left: 5px;
+}
+
+form.award-form{
+  margin-top: 220px
+}
+
 footer{
   background: url(../../images/bg-footer.jpg)no-repeat 0 0;
   background-size: cover;
+}
+
+footer ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li a{
+  color: #333;
+}
+
+footer ul li a:hover{
+  color: #ed5e24;
+}
+
+footer ul.socmed li{
+  display: inline-block;
+}
+
+footer ul.socmed li a{
+  color: #ed5e24;
+}
+
+footer ul.socmed li a:hover{
+  color: #333;
 }
