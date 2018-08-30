@@ -28,20 +28,17 @@
 		</div>
 	</section>
 	<section class="intro-award">
-		
+
 
 	</section>
 	<section class="form-award">
-		<div class="submission-banner">
-			<img src="<?php echo base_url ('images/submission-banner.png') ?>">
-		</div>
 		<?php include "include/form.php" ?>
 	</section>
 
 	<section class="award-list">
 		<div class="container">
 			<div class="clearer">
-				
+
 			<div class="row">
 				<div class="col-xl-12 col-lg-5 col-md-5 col-sm-5">
 					<h1 class="hh">
@@ -58,7 +55,7 @@
                 			<button type="submit" class="btn btn-warning btn-block hii">READ MORE
                 			</button>
           			</div>
-					
+
 				</div>
 				</div>
 			</div>

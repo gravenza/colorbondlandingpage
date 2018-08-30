@@ -1,5 +1,10 @@
 <div class="container">
   <div class="clearer">
+
+    <div class="submission-banner">
+			<img src="<?php echo base_url ('images/submission-banner.png') ?>">
+		</div>
+
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <form class="form-horizontal award-form">

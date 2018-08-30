@@ -4,6 +4,7 @@
   float: left;
   width: 100%;
   margin: 20px 0;
+  position: relative;©
 }
 
 .cellpadding{
@@ -56,7 +57,7 @@ form.award-form .btn-warning{
   border-color: #DB501F;
   text-transform: uppercase;
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 form.award-form .custom-file-label{
@@ -64,6 +65,11 @@ form.award-form .custom-file-label{
   right: 15px;
   border-radius: 20px;
   overflow: hidden;
+}
+
+form.award-form .btn-secondary{
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .btn-category .col-xl-4:first-child{
@@ -141,10 +147,14 @@ section.main-slider .carousel-indicators li{
   position: relative;
 }
 
-.submission-banner{ 
+.submission-banner{
     position: absolute;
-    top: 130px;
-    left: 115px;
+    top: 112px;
+    left: 0;
+}
+
+.submission-banner img{
+  width: 250px;
 }
 
 @-moz-document url-prefix() {
