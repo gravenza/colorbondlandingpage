@@ -47,8 +47,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="file">Upload file</label>
                     <div class="col-sm-4 custom-file">
-                        <input type="file" class="custom-file-input form-control" id="file" required>
-                        <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                        <input type="file" class="form-control-file form-control file-custom" id="file" required>
                     </div>
             </div>
             <div class="form-group row">

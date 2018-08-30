@@ -20,7 +20,7 @@
               <a href="#.">Colorbond<sup>&reg;</sup> Award 2017</a>
             </li>
             <li>
-              <a href="#.">About Us</a>
+              <a href="#.">Colorbond<sup>&reg;</sup> Fun Run</a>
             </li>
           </ul>
         </div>

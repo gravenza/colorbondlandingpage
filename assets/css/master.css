@@ -54,6 +54,9 @@ form.award-form button{
 form.award-form .btn-warning{
   background-color: #ED5E24;
   border-color: #DB501F;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
 }
 
 form.award-form .custom-file-label{
@@ -129,6 +132,41 @@ section.main-slider .carousel-indicators li{
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.file-custom{
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+@-moz-document url-prefix() {
+    .file-custom{
+        padding: 3px;
+    }
+}
+
+.file-custom::-webkit-file-upload-button{
+  visibility: hidden;
+}
+
+.file-custom::before {
+  content: 'Browse';
+  position: absolute;
+  right: -3px;
+  top: -2px;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 6px 18px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
 }
 
 footer{
