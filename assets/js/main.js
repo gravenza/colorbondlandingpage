@@ -6,7 +6,7 @@ $(document).ready(function(){
   console.log('width:'+ wWidth);
   console.log('height:'+ wheight);
 
-  if($(window).width() > 1280){
+  if($(window).width() > 1680){
     $('section.form-award').css('height',wheight);
     $('.align-items-center').css('height',(wheight - 300));
   }
