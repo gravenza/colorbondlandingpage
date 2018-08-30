@@ -6,6 +6,8 @@ $(document).ready(function(){
   console.log('width:'+ wWidth);
   console.log('height:'+ wheight);
 
-  $('section.form-award').css('height',wheight);
-  $('.align-items-center').css('height',(wheight - 300));
+  if($(window).width() > 1280){
+    $('section.form-award').css('height',wheight);
+    $('.align-items-center').css('height',(wheight - 300));
+  }
 })
