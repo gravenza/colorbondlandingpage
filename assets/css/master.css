@@ -141,6 +141,12 @@ section.main-slider .carousel-indicators li{
   position: relative;
 }
 
+.submission-banner{ 
+    position: absolute;
+    top: 130px;
+    left: 115px;
+}
+
 @-moz-document url-prefix() {
     .file-custom{
         padding: 3px;

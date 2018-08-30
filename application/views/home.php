@@ -28,26 +28,13 @@
 		</div>
 	</section>
 	<section class="intro-award">
-		<div class="container">
-			<div class="clearer">
-				<div class="row align-items-center">
-					<div class="col-xl-6 offset-xl-6">
-						<h1>Colorbond Award<br />Everlasting Beauty</h1>
-						<p>Colorbond seeks to celebrate the everlasting beauty of architecture by connecting the
-community, the architects and their work through the series of events in this year Colorbond Award:</p>
-						<ul>
-							<li><i class="fa fa-circle"></i> Community Gathering</li>
-							<li><i class="fa fa-circle"></i> Coaching Clinic</li>
-							<li><i class="fa fa-circle"></i> Colorbond Fun Run</li>
-							<li><i class="fa fa-circle"></i> Colorbond Art in the Park</li>
-							<li><i class="fa fa-circle"></i> Colorbond Award</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+		
+
 	</section>
 	<section class="form-award">
+		<div class="submission-banner">
+			<img src="<?php echo base_url ('images/submission-banner.png') ?>">
+		</div>
 		<?php include "include/form.php" ?>
 	</section>
 
