@@ -20,7 +20,7 @@
               <div class="col-sm-5">
                  <div class="btn-category row">
                    <div class="col-xl-3 col-md-12 col-sm-12">
-                    <button type="button" data-value="Project Owner" class="btn btn-secondary btn-block">Project Owner</button>
+                    <button type="button" data-value="Project Owner" class="btn btn-warning btn-block">Project Owner</button>
                    </div>
                    <div class="col-xl-3 col-md-12 col-sm-12">
                     <button type="button" data-value="Architect" class="btn btn-secondary btn-block">Architect</button>
