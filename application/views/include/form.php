@@ -7,7 +7,7 @@
 
     <div class="row align-items-center">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <form class="form-horizontal award-form">
+        <form class="form-horizontal award-form" action="<?php echo site_url('home/dosubmit') ?>" enctype="multipart/form-data">
             <br>
             <div class="form-group row">
               <label class="control-label col-sm-2" for="name">Name</label>
