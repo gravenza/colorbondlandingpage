@@ -10,4 +10,10 @@ $(document).ready(function(){
     $('section.form-award').css('height',wheight);
     $('.align-items-center').css('height',(wheight - 300));
   }
+
+  $('.btn-category button').click(function(){
+    $('.btn-category').find('.btn-secondary').addClass('btn-warning');
+    $('.btn-category').find('.btn-warning').removeClass('btn-warning');
+    $(this).addClass('btn-warning');
+  })
 })
