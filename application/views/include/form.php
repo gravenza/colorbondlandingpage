@@ -20,17 +20,18 @@
               <div class="col-sm-5">
                  <div class="btn-category row">
                    <div class="col-xl-3 col-md-12 col-sm-12">
-                    <button type="button" class="btn btn-secondary btn-block">Project Owner</button>
+                    <button type="button" data-value="Project Owner" class="btn btn-secondary btn-block">Project Owner</button>
                    </div>
                    <div class="col-xl-3 col-md-12 col-sm-12">
-                    <button type="button" class="btn btn-secondary btn-block">Architect</button>
+                    <button type="button" data-value="Architect" class="btn btn-secondary btn-block">Architect</button>
                    </div>
                    <div class="col-xl-3 col-md-12 col-sm-12">
-                    <button type="button" class="btn btn-secondary btn-block">Contractor</button>
+                    <button type="button" data-value="Contractor" class="btn btn-secondary btn-block">Contractor</button>
                    </div>
                    <div class="col-xl-3 col-md-12 col-sm-12">
-                    <button type="button" class="btn btn-secondary btn-block">Others</button>
+                    <button type="button" data-value="other" class="btn btn-secondary btn-block">Others</button>
                    </div>
+                   <input type="hidden" name="category" value="project-owner" />
                  </div>
               </div>
             </div>
@@ -53,8 +54,8 @@
                 <input type="text" class="form-control form-control-sm" name="phone" style="border-radius: 20px;">
               </div>
             </div>
-            <div class="form-group row">
-              <label class="control-label col-sm-2" for="univ">Job Title</label>
+            <div class="form-group row inhidden" style="display:none">
+              <label class="control-label col-sm-2" for="occupation">Job Title</label>
               <div class="col-sm-5">
                 <input type="text" class="form-control form-control-sm" name="jobtitle" style="border-radius: 20px;">
               </div>

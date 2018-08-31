@@ -15,5 +15,17 @@ $(document).ready(function(){
     $('.btn-category').find('.btn-secondary').addClass('btn-warning');
     $('.btn-category').find('.btn-warning').removeClass('btn-warning');
     $(this).addClass('btn-warning');
+
+    var catvalue = $(this).data('value');
+
+    $('input:hidden').val(catvalue);
+
+    if(catvalue == 'other'){
+      $('.form-group.inhidden').css('display','block');
+      $('input[name="occupation"]').val('');
+    }else{
+      $('.form-group.inhidden').css('display','none');
+    }
+
   })
 })
