@@ -35,7 +35,7 @@ section.intro-award{
 section.form-award{
   background: url(../../images/bg-form-award.png)no-repeat 0 0;
   background-size: 100% 100%;
-  height: 900px;
+  height: 990px;
   margin-top: -220px;
   z-index: 1;
 }
@@ -43,8 +43,8 @@ section.form-award{
 section.award-list{
   background: url(../../images/bg-award-list.jpg)no-repeat 0 0;
   background-size: cover;
-  height: 700px;
-  margin-top: -220px;
+  height: 600px;
+  margin-top: -250px;
   z-index: 0;
 }
 
@@ -55,9 +55,7 @@ form.award-form button{
 form.award-form .btn-warning{
   background-color: #ED5E24;
   border-color: #DB501F;
-  text-transform: uppercase;
   color: #fff;
-  font-size: 12px;
 }
 
 form.award-form .custom-file-label{
@@ -68,21 +66,26 @@ form.award-form .custom-file-label{
 }
 
 form.award-form .btn-secondary{
-  text-transform: uppercase;
+
+}
+
+.btn-category .btn{
   font-size: 12px;
+  padding: 6px 0;
 }
 
-.btn-category .col-xl-4:first-child{
+.btn-category .col-xl-3:first-child{
   padding-right: 5px;
 }
 
-.btn-category .col-xl-4:nth-child(2){
+.btn-category .col-xl-3:nth-child(n+2){
   padding-left: 5px;
   padding-right: 5px;
 }
 
-.btn-category .col-xl-4:last-child{
+.btn-category .col-xl-3:last-child{
   padding-left: 5px;
+  padding-right: 15px;
 }
 
 form.award-form{
