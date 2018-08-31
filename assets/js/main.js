@@ -21,7 +21,7 @@ $(document).ready(function(){
     $('input:hidden').val(catvalue);
 
     if(catvalue == 'other'){
-      $('.form-group.inhidden').css('display','block');
+      $('.form-group.inhidden').css('display','flex');
       $('input[name="occupation"]').val('');
     }else{
       $('.form-group.inhidden').css('display','none');
