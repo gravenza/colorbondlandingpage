@@ -69,7 +69,7 @@
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="file">Upload file</label>
                     <div class="col-sm-5 custom-file">
-                        <input type="file" class="form-control-file form-control file-custom" id="file" required>
+                        <input type="file" name="files[]" multiple class="form-control-file form-control file-custom" id="file" required>
                     </div>
             </div>
             <div class="form-group row">
