@@ -29,7 +29,7 @@
                     <button type="button" data-value="Contractor" class="btn btn-secondary btn-block">Contractor</button>
                    </div>
                    <div class="col-xl-3 col-md-12 col-sm-12">
-                    <button type="button" data-value="other" class="btn btn-secondary btn-block">Others</button>
+                    <button type="button" data-value="Other" class="btn btn-secondary btn-block">Others</button>
                    </div>
                    <input type="hidden" name="category" value="project-owner" />
                  </div>

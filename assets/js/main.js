@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     $('input:hidden').val(catvalue);
 
-    if(catvalue == 'other'){
+    if(catvalue == 'Other'){
       $('.form-group.inhidden').css('display','flex');
       $('input[name="occupation"]').val('');
     }else{
