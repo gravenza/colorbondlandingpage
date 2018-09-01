@@ -7,12 +7,12 @@
 
     <div class="row align-items-center">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        <form class="form-horizontal award-form" method="post" action="<?php echo site_url('home/dosubmit') ?>" enctype="multipart/form-data">
+        <form class="form-horizontal award-form" id="submissionForm" method="post" action="<?php echo site_url('home/dosubmit') ?>" enctype="multipart/form-data">
             <br>
             <div class="form-group row">
               <label class="control-label col-sm-2" for="name">Name</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" name="name" style="border-radius: 20px;">
+                <input type="text" class="form-control form-control-sm" name="name" required style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
@@ -45,13 +45,13 @@
             <div class="form-group row">
               <label class="control-label col-sm-2" for="email">Email*</label>
               <div class="col-sm-5">
-                <input type="email" class="form-control form-control-sm" name="email" style="border-radius: 20px;">
+                <input type="email" required class="form-control form-control-sm" name="email" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
               <label class="control-label col-sm-2" for="phone">Phone Number</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" name="phone" style="border-radius: 20px;">
+                <input type="text" required class="form-control form-control-sm" name="phone" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row inhidden" style="display:none">
@@ -63,13 +63,13 @@
             <div class="form-group row">
               <label class="control-label col-sm-2" for="univ">Company</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" name="univ" style="border-radius: 20px;">
+                <input type="text" required class="form-control form-control-sm" name="univ" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
                 <label class="control-label col-sm-2" for="file">Upload file</label>
                     <div class="col-sm-5 custom-file">
-                        <input type="file" name="files[]" multiple class="form-control-file form-control file-custom" id="file" />
+                        <input type="file" required name="files[]" multiple class="form-control-file form-control file-custom" id="file" />
                     </div>
             </div>
             <div class="form-group row">
