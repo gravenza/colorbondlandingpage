@@ -12,7 +12,7 @@
             <div class="form-group row">
               <label class="control-label col-sm-2" for="name">Name</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" name="name" required style="border-radius: 20px;">
+                <input type="text" class="form-control form-control-sm" name="name" minlength="2" required style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
@@ -51,7 +51,7 @@
             <div class="form-group row">
               <label class="control-label col-sm-2" for="phone">Phone Number</label>
               <div class="col-sm-5">
-                <input type="text" required class="form-control form-control-sm" name="phone" style="border-radius: 20px;">
+                <input type="tel" required minlength="8" class="form-control form-control-sm" name="phone" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row inhidden" style="display:none">
