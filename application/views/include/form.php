@@ -73,6 +73,19 @@
                     </div>
             </div>
             <div class="form-group row">
+                <label class="control-label col-sm-2" for="file">Insert Captcha</label>
+                    <div class="col-sm-5 custom-file">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <?php echo $captcha ?>
+                        </div>
+                        <div class="col-sm-8">
+                          <input type="text" required name="captcha" class="form-control form-control-sm" id="captcha" />
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="form-group row">
               <div class="col-sm-2 offset-sm-2">
                 <button type="submit" class="btn btn-warning btn-block">Submit</button>
               </div>

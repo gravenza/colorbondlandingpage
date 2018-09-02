@@ -13,8 +13,9 @@ class Home extends CI_Controller
   }
 
   public function index(){
+    $data['captcha'] = $this->m_award->_makecaptcha();
     $this->load->view('include/header');
-    $this->load->view('home');
+    $this->load->view('home',$data);
     $this->load->view('include/footer');
   }
 
@@ -29,13 +30,15 @@ class Home extends CI_Controller
     $company = $this->input->post('company',true);
 
     $file = count($_FILES['files']['name']);
-    $filesize = $_FILES['files']['size'];
 
     for($no=0; $no < $file; $no++){
       $file_upload[] = $_FILES['files']['name'][$no];
     }
 
     $files = serialize($file_upload);
+
+
+
 
     echo $filesize;
   }
