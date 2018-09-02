@@ -85,6 +85,12 @@ class Home extends CI_Controller
 
       }
 
+      $this->load->view('include/header');
+      $this->load->view('home',$data);
+      $this->load->view('include/footer');
+
+      redirect('home');
+
     }
   }
 
