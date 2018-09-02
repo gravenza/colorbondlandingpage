@@ -41,7 +41,7 @@ class Home extends CI_Controller
       $message = $this->input->post('message',true);
       $email = $this->input->post('email',true);
       $phone = $this->input->post('phone',true);
-      $occupation = $this->input->post('occupation',true);
+      $occupation = $this->input->post('occupation') == '' ? $this->input->post('occupation',true) : '';
       $company = $this->input->post('company',true);
 
       $file = count($_FILES['files']['name']);
