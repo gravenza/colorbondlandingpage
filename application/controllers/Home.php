@@ -83,10 +83,6 @@ class Home extends CI_Controller
         echo 'alert("Submit Award Success.")';
         echo '</script>';
 
-        $this->load->view('include/header');
-        $this->load->view('home',$data);
-        $this->load->view('include/footer');
-
         redirect('home');
 
       }
