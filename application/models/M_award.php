@@ -43,7 +43,7 @@ class M_award extends CI_Model
 			'overwrite'     => FALSE,
 
 			/* real path to upload folder ALWAYS */
-			'upload_path' => './assets/uploads/'.$dirname.'/';
+			'upload_path' => "./assets/uploads/". $dirname ."/";
 		  );
 
 			$this->upload->initialize($config);
