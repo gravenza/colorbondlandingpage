@@ -21,25 +21,72 @@ class Home extends CI_Controller
 
   public function dosubmit(){
 
-    $name = $this->input->post('name',true);
-    $category = $this->input->post('category',true);
-    $message = $this->input->post('message',true);
-    $email = $this->input->post('email',true);
-    $phone = $this->input->post('phone',true);
-    $occupation = $this->input->post('occupation',true);
-    $company = $this->input->post('company',true);
+    $expiration = time() - 7200; // Two hour limit
+    $this->db->where('captcha_time < ', $expiration)->delete('captcha');
 
-    $file = count($_FILES['files']['name']);
+    // Then see if a captcha exists:
+    $sql = 'SELECT COUNT(*) AS count FROM captcha WHERE word = ? AND ip_address = ? AND captcha_time > ?';
+    $binds = array($_POST['captcha'], $this->input->ip_address(), $expiration);
+    $query = $this->db->query($sql, $binds);
+    $row = $query->row();
 
-    for($no=0; $no < $file; $no++){
-      $file_upload[] = $_FILES['files']['name'][$no];
+    if ($row->count == 0) {
+      echo '<script language="javascript">';
+      echo 'alert("You must submit the word that appears in the image.")';
+      echo '</script>';
+    } else {
+
+      $name = $this->input->post('name',true);
+      $category = $this->input->post('category',true);
+      $message = $this->input->post('message',true);
+      $email = $this->input->post('email',true);
+      $phone = $this->input->post('phone',true);
+      $occupation = $this->input->post('occupation',true);
+      $company = $this->input->post('company',true);
+
+      $file = count($_FILES['files']['name']);
+
+      for($no=0; $no < $file; $no++){
+        $file_upload[] = $_FILES['files']['name'][$no];
+      }
+
+      $files = serialize($file_upload);
+
+      $data = array(
+      'name' => $name,
+      'category' => $category,
+      'message' => $message,
+      'email' => $email,
+      'phone' => $phone,
+      'occupation' => $occupation,
+      'company' => $company,
+      'files' => $files,
+      'posting_date' => date('Y-m-d')
+      );
+
+      $sql = $this->db->insert('award',$data);
+      $this->m_award->multiple_upload();
+
+      if($sql){
+
+        $thebody = "Name :".$name."<br />";
+				$thebody .= "Category :".$category."<br />";
+				$thebody .= "Comment :".$message."<br />";
+				$thebody .= "Phone :".$phone."<br />";
+				$thebody .= "Job Title :".$occupation."<br />";
+				$thebody .= "Company :".$company."<br />";
+
+        $this->mailaward($name,$email,$thebody);
+        //redirect('awards/success');
+        echo '<script language="javascript">';
+        echo 'alert("Submit Award Success.")';
+        echo '</script>';
+
+      }
+
     }
 
-    $files = serialize($file_upload);
 
 
-
-
-    echo $filesize;
   }
 }
