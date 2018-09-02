@@ -115,7 +115,7 @@ class M_award extends CI_Model
 		$config['protocol'] = 'smtp';
 		$config['smtp_host'] = 'mail.colorbond.id';
 		$config['smtp_user'] = 'info@colorbond.id';
-		$config['smtp_pass'] = 'colorbond2018';
+		$config['smtp_pass'] = 'useradmin1234';
 		$config['smtp_port'] = 587;
 		$config['mailtype'] = 'html';
 		$config['charset'] = 'iso-8859-1';

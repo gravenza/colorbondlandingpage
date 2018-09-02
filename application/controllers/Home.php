@@ -77,7 +77,7 @@ class Home extends CI_Controller
 
       if($sql){
 
-        $this->mailaward($name,$email,$thebody);
+        $this->m_award->mailaward($name,$email,$thebody);
         //redirect('awards/success');
         echo '<script language="javascript">';
         echo 'alert("Submit Award Success.")';
@@ -102,43 +102,4 @@ class Home extends CI_Controller
 
   }
 
-  function mailaward($name,$email,$body){
-
-		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'mail.colorbond.id';
-		$config['smtp_user'] = 'info@colorbond.id';
-		$config['smtp_pass'] = 'useradmin1234';
-		$config['smtp_port'] = 587;
-		$config['mailtype'] = 'html';
-		$config['charset'] = 'iso-8859-1';
-		$config['wordwrap'] = TRUE;
-
-		$this->email->initialize($config);
-
-		$this->email->from($email, $name);
-		//$this->email->to('andre.jatmika@bluescope.com');
-    $this->email->to('tonny@3motion.co.id');
-		//$this->email->cc('another@another-example.com');
-		//$this->email->bcc('tonny@3motion.co.id');
-		//$this->email->bcc('khadad@3motion.co');
-
-		$this->email->subject('Submit Awards from'. $name);
-		$this->email->message($body);
-
-		$attachment = $this->db->order_by('award_id','DESC')->where('email',$email)->get('award')->row_array();
-
-		if(count(unserialize($attachment['files'])) > 0){
-			foreach(unserialize($attachment['files']) as $pict){
-				$this->email->attach('./assets/uploads/'.date('Y').'/'.$pict);
-			}
-		}
-
-
-	  if( ! $this->email->send() ){
-      echo '<script language="javascript">';
-      echo 'alert("Emaile ora terkirim")';
-      echo '</script>';
-    };
-
-	}
 }
