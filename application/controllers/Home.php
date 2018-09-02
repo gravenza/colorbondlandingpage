@@ -44,6 +44,13 @@ class Home extends CI_Controller
       $occupation = $this->input->post('occupation') == '' ? $this->input->post('occupation',true) : '';
       $company = $this->input->post('company',true);
 
+      $thebody = "Name :".$name."<br />";
+      $thebody .= "Category :".$category."<br />";
+      $thebody .= "Comment :".$message."<br />";
+      $thebody .= "Phone :".$phone."<br />";
+      $thebody .= "Job Title :".$occupation."<br />";
+      $thebody .= "Company :".$company."<br />";
+
       $file = count($_FILES['files']['name']);
 
       for($no=0; $no < $file; $no++){
@@ -68,13 +75,6 @@ class Home extends CI_Controller
       $this->m_award->multiple_upload();
 
       if($sql){
-
-        $thebody = "Name :".$name."<br />";
-				$thebody .= "Category :".$category."<br />";
-				$thebody .= "Comment :".$message."<br />";
-				$thebody .= "Phone :".$phone."<br />";
-				$thebody .= "Job Title :".$occupation."<br />";
-				$thebody .= "Company :".$company."<br />";
 
         $this->mailaward($name,$email,$thebody);
         //redirect('awards/success');
