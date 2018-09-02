@@ -36,9 +36,9 @@
               </div>
             </div>
             <div class="form-group row">
-              <label class="control-label col-sm-2" for="phone">Comment</label>
+              <label class="control-label col-sm-2" for="comment">Comment</label>
               <div class="col-sm-5">
-                <textarea rows="2" class="form-control form-control-sm" name="phone" style="border-radius: 15px;">
+                <textarea rows="2" class="form-control form-control-sm" name="message" style="border-radius: 15px;">
                 </textarea>
               </div>
             </div>
@@ -49,7 +49,7 @@
               </div>
             </div>
             <div class="form-group row">
-              <label class="control-label col-sm-2" for="phone">Phone Number</label>
+              <label class="control-label col-sm-2" for="phone">Phone Number*</label>
               <div class="col-sm-5">
                 <input type="tel" required minlength="8" class="form-control form-control-sm" name="phone" style="border-radius: 20px;">
               </div>
@@ -57,13 +57,13 @@
             <div class="form-group row inhidden" style="display:none">
               <label class="control-label col-sm-2" for="occupation">Job Title</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" name="jobtitle" style="border-radius: 20px;">
+                <input type="text" class="form-control form-control-sm" required name="jobtitle" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
-              <label class="control-label col-sm-2" for="univ">Company</label>
+              <label class="control-label col-sm-2" for="company">Company*</label>
               <div class="col-sm-5">
-                <input type="text" required class="form-control form-control-sm" name="univ" style="border-radius: 20px;">
+                <input type="text" required class="form-control form-control-sm" name="company" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
