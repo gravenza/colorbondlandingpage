@@ -79,11 +79,10 @@ class Home extends CI_Controller
 
         $this->m_award->mailaward($name,$email,$thebody);
         //redirect('awards/success');
-        echo '<script language="javascript">';
-        echo 'alert("Submit Award Success.")';
-        echo '</script>';
-
-        redirect('home');
+        echo ("<script LANGUAGE='JavaScript'>
+    window.alert('Succesfully Submit');
+    window.location.href='".site_url()."';
+    </script>");
 
       }
 
