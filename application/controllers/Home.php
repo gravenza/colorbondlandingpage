@@ -76,7 +76,7 @@ class Home extends CI_Controller
 				$thebody .= "Job Title :".$occupation."<br />";
 				$thebody .= "Company :".$company."<br />";
 
-        $this->mailaward($name,$email,$thebody);
+        $this->m_award->mailaward($name,$email,$thebody);
         //redirect('awards/success');
         echo '<script language="javascript">';
         echo 'alert("Submit Award Success.")';

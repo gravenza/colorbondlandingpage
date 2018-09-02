@@ -19,7 +19,7 @@ class M_award extends CI_Model
     $filename = "./assets/uploads/" . $dirname . "/";
 
     if (!file_exists($filename)) {
-        mkdir($dirname, 0777);
+        mkdir('./assets/uploads/'.$dirname, 0777);
         //echo "The directory $dirname was successfully created.";
         //exit;
     }
