@@ -87,7 +87,7 @@ class Home extends CI_Controller
     }
   }
 
-  public function mailaward($name,$email,$body){
+  function mailaward($name,$email,$body){
 
 		$config['protocol'] = 'smtp';
 		$config['smtp_host'] = 'mail.colorbond.id';
