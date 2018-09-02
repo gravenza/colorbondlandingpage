@@ -99,7 +99,7 @@ class Home extends CI_Controller
     $thebody .= "Company : Gravenza <br />";
 
     $this->mailaward($name,$email,$thebody);
-    
+
   }
 
   function mailaward($name,$email,$body){
@@ -107,7 +107,7 @@ class Home extends CI_Controller
 		$config['protocol'] = 'smtp';
 		$config['smtp_host'] = 'mail.colorbond.id';
 		$config['smtp_user'] = 'info@colorbond.id';
-		$config['smtp_pass'] = 'colorbond2018';
+		$config['smtp_pass'] = 'useradmin1234';
 		$config['smtp_port'] = 587;
 		$config['mailtype'] = 'html';
 		$config['charset'] = 'iso-8859-1';
