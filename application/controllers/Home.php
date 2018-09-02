@@ -22,6 +22,11 @@ class Home extends CI_Controller
 
   public function dosubmit(){
 
+    $data['captcha'] = $this->m_award->_makecaptcha();
+    $this->load->view('include/header');
+    $this->load->view('home',$data);
+    $this->load->view('include/footer');
+
     $expiration = time() - 7200; // Two hour limit
     $this->db->where('captcha_time < ', $expiration)->delete('captcha');
 
