@@ -29,7 +29,7 @@ class Home extends CI_Controller
     $company = $this->input->post('company',true);
 
     $file = count($_FILES['files']['name']);
-    $filesize = count($_FILES['files']['size']);
+    $filesize = $_FILES['files']['size'];
 
     for($no=0; $no < $file; $no++){
       $file_upload[] = $_FILES['files']['name'][$no];
