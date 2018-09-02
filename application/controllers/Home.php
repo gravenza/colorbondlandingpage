@@ -88,6 +88,20 @@ class Home extends CI_Controller
     }
   }
 
+  public function testemail(){
+    $name = "Tonny Wibowo";
+    $email = "toniewibowo@gmail.com";
+    $thebody = "Name : Toni Wibowo <br />";
+    $thebody .= "Category : Contractor <br />";
+    $thebody .= "Comment : Testing <br />";
+    $thebody .= "Phone :081210109469 <br />";
+    $thebody .= "Job Title : <br />";
+    $thebody .= "Company : Gravenza <br />";
+
+    $this->mailaward($name,$email,$thebody);
+    
+  }
+
   function mailaward($name,$email,$body){
 
 		$config['protocol'] = 'smtp';
