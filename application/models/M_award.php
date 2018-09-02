@@ -130,19 +130,19 @@ class M_award extends CI_Model
 		//$this->email->bcc('tonny@3motion.co.id');
 		//$this->email->bcc('khadad@3motion.co');
 
-		$this->email->subject('Submit Awards');
+		$this->email->subject('Submit Awards from'. $name);
 		$this->email->message($body);
 
 		$attachment = $this->db->order_by('award_id','DESC')->where('email',$email)->get('award')->row_array();
 
 		if(count(unserialize($attachment['files'])) > 0){
 			foreach(unserialize($attachment['files']) as $pict){
-				$this->email->attach('./assets/uploads/award/'.$pict);
+				$this->email->attach('./assets/uploads/'.date('Y').'/'.$pict);
 			}
 		}
 
 
-		return $this->email->send();
+	  $this->email->send();
 
 	}
 }
