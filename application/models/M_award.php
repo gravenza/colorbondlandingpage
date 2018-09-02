@@ -26,10 +26,10 @@ class M_award extends CI_Model
   function _makecaptcha(){
 
 		$vals = array(
-        //'word'          => 'Random word',
+        //'word'          => random_string('alnum',4),
         'img_path'      => './captcha/',
         'img_url'       => base_url().'captcha/',
-        'font_path'     => './fonts/helveticaneue-extended-webfont.ttf',
+        'font_path'     => FCPATH.'system/fonts/texb.ttf',
         'img_width'     => '150',
         'img_height'    => 30,
         'expiration'    => 7200,
