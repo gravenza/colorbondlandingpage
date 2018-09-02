@@ -24,6 +24,8 @@ class M_award extends CI_Model
         //exit;
     }
 
+    //$pathaward = "./assets/uploads/". $dirname . "/";
+
 	$this->load->library('upload');
   $number_of_files_uploaded = count($_FILES['files']['name']);
 
@@ -43,7 +45,7 @@ class M_award extends CI_Model
 			'overwrite'     => FALSE,
 
 			/* real path to upload folder ALWAYS */
-			'upload_path' => ('./assets/uploads/'.$dirname);
+			'upload_path' => './assets/uploads/'. $dirname .'/'
 		  );
 
 			$this->upload->initialize($config);
