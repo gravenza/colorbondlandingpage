@@ -57,7 +57,7 @@
             <div class="form-group row inhidden" style="display:none">
               <label class="control-label col-sm-2" for="occupation">Job Title</label>
               <div class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" required name="jobtitle" style="border-radius: 20px;">
+                <input type="text" class="form-control form-control-sm" required name="occupation" style="border-radius: 20px;">
               </div>
             </div>
             <div class="form-group row">
