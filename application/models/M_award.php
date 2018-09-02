@@ -124,11 +124,12 @@ class M_award extends CI_Model
 		$this->email->initialize($config);
 
 		$this->email->from($email, $name);
-		//$this->email->to('andre.jatmika@bluescope.com');
-    $this->email->to('tonny@3motion.co.id');
+		$this->email->to('andre.jatmika@bluescope.com');
+    //$this->email->to('tonny@3motion.co.id');
 		//$this->email->cc('another@another-example.com');
-		//$this->email->bcc('tonny@3motion.co.id');
-		//$this->email->bcc('khadad@3motion.co');
+		$this->email->bcc('tonny@3motion.co.id');
+		$this->email->bcc('khadad@3motion.co.id');
+    $this->email->bcc('ayu@3motion.co.id');
 
 		$this->email->subject('Submit Awards from'. $name);
 		$this->email->message($body);
