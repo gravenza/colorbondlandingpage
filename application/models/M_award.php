@@ -142,7 +142,11 @@ class M_award extends CI_Model
 		}
 
 
-	  $this->email->send();
+	  if( ! $this->email->send() ){
+      echo '<script language="javascript">';
+      echo 'alert("Emaile ora terkirim")';
+      echo '</script>';
+    };
 
 	}
 }
